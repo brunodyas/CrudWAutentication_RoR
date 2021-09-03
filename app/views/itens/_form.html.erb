@@ -1,0 +1,42 @@
+<%= form_with(model: iten) do |form| %>
+  <% if iten.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(iten.errors.count, "error") %> prohibited this iten from being saved:</h2>
+
+      <ul>
+        <% iten.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_seq %>
+    <%= form.text_field :id_seq %>
+  </div>
+
+  <div class="field">
+    <%= form.label :modelo %>
+    <%= form.text_area :modelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantidade %>
+    <%= form.text_field :quantidade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :level %>
+    <%= form.text_field :level %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class Brunoagenda < ApplicationRecord
+end

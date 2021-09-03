@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @iten.nome %>
+</p>
+
+<p>
+  <strong>Id seq:</strong>
+  <%= @iten.id_seq %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @iten.modelo %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @iten.quantidade %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @iten.level %>
+</p>
+
+<%= link_to 'Edit', edit_iten_path(@iten) %> |
+<%= link_to 'Back', itens_path %>

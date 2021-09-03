@@ -1,0 +1,47 @@
+<%= form_with(model: appwebexemp) do |form| %>
+  <% if appwebexemp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(appwebexemp.errors.count, "error") %> prohibited this appwebexemp from being saved:</h2>
+
+      <ul>
+        <% appwebexemp.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.text_field :id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endereco %>
+    <%= form.text_area :endereco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sobrenome %>
+    <%= form.text_field :sobrenome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

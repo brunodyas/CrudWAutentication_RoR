@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @brunoagenda.nome %>
+</p>
+
+<p>
+  <strong>Id seq:</strong>
+  <%= @brunoagenda.id_seq %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @brunoagenda.endereco %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @brunoagenda.preco %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @brunoagenda.email %>
+</p>
+
+<%= link_to 'Edit', edit_brunoagenda_path(@brunoagenda) %> |
+<%= link_to 'Back', brunoagendas_path %>

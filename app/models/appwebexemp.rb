@@ -1,0 +1,2 @@
+class Appwebexemp < ApplicationRecord
+end
